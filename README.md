@@ -9,3 +9,4 @@ to compile and link the program, simply type "make". To run the program, type "m
 If you do not want to do that (or cannot do that), do the following:
     compile with "nasm -f elf32 -g -F dwarf -o hw11translate2Ascii.o hw11translate2Ascii.s"
     link with "ld -m elf_i386 -o hw11translate2Ascii hw11translate2Ascii.o"
+    run with "./hw11translate2Ascii"
