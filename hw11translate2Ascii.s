@@ -27,7 +27,8 @@ done:
     mov ebx, 1              ; still don't know what this does
     mov ecx, outputBuf 
     sub edi, ecx            ; calculate length of output buffer
-    mov edx, edi               
+    mov edx, edi
+    inc edx                 ; add one more byte for the newline
     int 80h                 ; make system call to write
     mov eax, 1              ; syscall for 'exit'
     mov ebx, 0              ; exit code 0
